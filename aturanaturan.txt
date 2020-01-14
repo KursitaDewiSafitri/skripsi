@@ -1,0 +1,4 @@
+aturan"
+- ID dan nama tidak boleh sama
+- ada notif "berhasil disimpan, di update, di hapus" saat melakukan tambah data, update dan hapus.
+-waktu tambah data selesai, trus tambah data lagi form "nama" datanya masih ada(tidak hilang)
