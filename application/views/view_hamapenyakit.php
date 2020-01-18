@@ -18,6 +18,7 @@
     <link href="<?php echo base_url().'assets/dist/css/style.min.css'?>" rel="stylesheet">
     <!-- page css -->
     <link href="<?php echo base_url().'assets/dist/css/pages/footable-page.css'?>" rel="stylesheet">
+    <link href="<?php echo base_url().'assets/node_modules/sweetalert/sweetalert.css'?>" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -347,7 +348,9 @@
     <script src="<?php echo base_url().'assets/node_modules/footable/js/footable.all.min.js'?>"></script>
     <!--FooTable init-->
     <script src="<?php echo base_url().'assets/dist/js/pages/footable-init.js'?>"></script>
-    
+    <!-- Sweet-Alert  -->
+    <script src="<?php echo base_url().'assets/node_modules/sweetalert/sweetalert.min.js'?>"></script>
+    <script src="<?php echo base_url().'assets/node_modules/sweetalert/jquery.sweet-alert.custom.js'?>"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             tampil_data();
