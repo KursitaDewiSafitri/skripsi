@@ -7,7 +7,9 @@ class Model_hamapenyakit extends CI_Model {
     function rules(){
         $this->load->library('form_validation');
         
-        $this->form_validation->set_rules('tambah_id_hamapenyakit', 'ID Data Guys', 'required');
+        $this->form_validation->set_rules('tambah_id_hamapenyakit', 'ID Data', 'required');
+        $this->form_validation->set_rules('tambah_nama_hamapenyakit', 'Nama', 'required');
+        $this->form_validation->set_rules('tambah_foto_hamapenyakit', 'Foto', 'required');
 
         if ($this->form_validation->run() == TRUE) {
             return TRUE;

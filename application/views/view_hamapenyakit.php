@@ -220,13 +220,13 @@
                             <div class="form-group row">
                                 <label class="col-md-2 col-form-label">Nama</label>
                                 <div class="col-md-10">
-                                <input type="text" name="tambah_name_hamapenyakit" id="tambah_nama_hamapenyakit" class="form-control" placeholder="Masukkan nama disiniiii....disiniii....disiniiii...">
+                                <input type="text" name="tambah_nama_hamapenyakit" id="tambah_nama_hamapenyakit" class="form-control" placeholder="Masukkan nama disiniiii....disiniii....disiniiii...">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2 col-form-label">Foto</label>
                                 <div class="col-md-10">
-                                <input type="file" name="tambah_foto" id="tambah_foto" class="form-control" placeholder="Manut awakmu">
+                                <input type="file" name="tambah_foto_hamapenyakit" id="tambah_foto_hamapenyakit" class="form-control">
                                 </div>
                             </div>    
                         </div>
@@ -386,7 +386,7 @@
                 let data = new FormData(document.getElementById("form_tambah"));
                 data.append('id_hamapenyakit',$('#tambah_id_hamapenyakit').val());
                 data.append('nama_hamapenyakit',$('#tambah_nama_hamapenyakit').val());
-                data.append('foto',$('#tambah_foto').get(0).files[0]);
+                data.append('foto',$('#tambah_foto_hamapenyakit').get(0).files[0]);
                 $.ajax({
                     type    :"POST",
                     url     :"<?php echo base_url('Hamapenyakit/save');?>",
@@ -402,11 +402,11 @@
                         $('#pesan-error-tmbh').html(result.pesan);
                         p.removeAttribute('hidden');
                         
-                        alert(result.status);
+                        //alert(result.status);
                       } else {
                         $('[name="tambah_id_hamapenyakit"]').val("");
                         $('[name="tambah_nama_hamapenyakit"]').val("");
-                        $('[name="tambah_foto"]').val("");
+                        $('[name="tambah_foto_hamapenyakit"]').val("");
                         $('#Modal_Tambah').modal('hide');
                         tampil_data();
                         alert(result.status);
