@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url().'assets/images/favicon.png'?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() . 'assets/images/favicon.png' ?>">
     <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
     <!-- Footable CSS -->
-    <link href="<?php echo base_url().'assets/node_modules/footable/css/footable.core.css'?>" rel="stylesheet">
-    <link href="<?php echo base_url().'assets/node_modules/bootstrap-select/bootstrap-select.min.css'?>" rel="stylesheet" />
+    <link href="<?php echo base_url() . 'assets/node_modules/footable/css/footable.core.css' ?>" rel="stylesheet">
+    <link href="<?php echo base_url() . 'assets/node_modules/bootstrap-select/bootstrap-select.min.css' ?>" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="<?php echo base_url().'assets/dist/css/style.min.css'?>" rel="stylesheet">
+    <link href="<?php echo base_url() . 'assets/dist/css/style.min.css' ?>" rel="stylesheet">
     <!-- page css -->
-    <link href="<?php echo base_url().'assets/dist/css/pages/footable-page.css'?>" rel="stylesheet">
-    <link href="<?php echo base_url().'assets/node_modules/sweetalert/sweetalert.css'?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() . 'assets/dist/css/pages/footable-page.css' ?>" rel="stylesheet">
+    <link href="<?php echo base_url() . 'assets/node_modules/sweetalert/sweetalert.css' ?>" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,16 +54,16 @@
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="<?php echo base_url().'assets/images/logo-icon.png'?>" alt="homepage" class="dark-logo" />
+                            <img src="<?php echo base_url() . 'assets/images/logo-icon.png' ?>" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="<?php echo base_url().'assets/images/logo-light-icon.png'?>" alt="homepage" class="light-logo" />
+                            <img src="<?php echo base_url() . 'assets/images/logo-light-icon.png' ?>" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                         <!-- dark Logo text -->
-                         <img src="<?php echo base_url().'assets/images/logo-text.png'?>" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->    
-                         <img src="<?php echo base_url().'assets/images/logo-light-text.png'?>" class="light-logo" alt="homepage" /></span> </a>
+                            <!-- dark Logo text -->
+                            <img src="<?php echo base_url() . 'assets/images/logo-text.png' ?>" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="<?php echo base_url() . 'assets/images/logo-light-text.png' ?>" class="light-logo" alt="homepage" /></span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -92,7 +92,7 @@
                         <!-- User Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown u-pro">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url().'assets/images/users/1.jpg'?>" alt="user" class=""> <span class="hidden-md-down">Mark &nbsp;<i class="fa fa-angle-down"></i></span> </a>
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url() . 'assets/images/users/1.jpg' ?>" alt="user" class=""> <span class="hidden-md-down">Mark &nbsp;<i class="fa fa-angle-down"></i></span> </a>
                             <div class="dropdown-menu dropdown-menu-right animated flipInY">
                                 <!-- text-->
                                 <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
@@ -126,7 +126,7 @@
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
         <?php
-         $this->load->view('view_sidebar');
+        $this->load->view('view_sidebar');
         ?>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
@@ -180,14 +180,14 @@
                                             </tr>
                                         </thead>
                                         <tbody id="tampil_data">
-                                            
+
                                         </tbody>
-                                                <td colspan="7">
-                                                    <div class="text-right">
-                                                        <ul class="pagination"> </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                        <td colspan="7">
+                                            <div class="text-right">
+                                                <ul class="pagination"> </ul>
+                                            </div>
+                                        </td>
+                                        </tr>
                                         </tfoot>
                                     </table>
                                 </div>
@@ -201,110 +201,110 @@
                 <!-- ============================================================== -->
                 <!-- MODAL ADD -->
                 <form id="form_tambah" type="POST" enctype="multipart/form-data">
-                <div class="modal fade" id="Modal_Tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tambah Data Penyakit</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="pesan-error-tmbh" class="alert alert-danger" hidden></div>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">ID</label>
-                                <div class="col-md-10">
-                                <input type="text" name="tambah_id_hamapenyakit" id="tambah_id_hamapenyakit" class="form-control" placeholder="XXX-xxx">
+                    <div class="modal fade" id="Modal_Tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Tambah Data Penyakit</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="pesan-error-tmbh" class="alert alert-danger" hidden></div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-form-label">ID</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="tambah_id_hamapenyakit" id="tambah_id_hamapenyakit" class="form-control" placeholder="XX00" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-form-label">Nama</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="tambah_nama_hamapenyakit" id="tambah_nama_hamapenyakit" class="form-control" placeholder="Masukkan nama disiniiii....disiniii....disiniiii...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-form-label">Foto</label>
+                                        <div class="col-md-10">
+                                            <input type="file" name="tambah_foto_hamapenyakit" id="tambah_foto_hamapenyakit" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Keluar</button>
+                                    <button type="button" type="submit" id="btn_simpan" class="btn btn-primary">Simpan</button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Nama</label>
-                                <div class="col-md-10">
-                                <input type="text" name="tambah_nama_hamapenyakit" id="tambah_nama_hamapenyakit" class="form-control" placeholder="Masukkan nama disiniiii....disiniii....disiniiii...">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Foto</label>
-                                <div class="col-md-10">
-                                <input type="file" name="tambah_foto_hamapenyakit" id="tambah_foto_hamapenyakit" class="form-control">
-                                </div>
-                            </div>    
                         </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Keluar</button>
-                        <button type="button" type="submit" id="btn_simpan" class="btn btn-primary">Simpan</button>
                     </div>
-                    </div>
-                </div>
-                </div>
                 </form>
                 <!--END MODAL ADD-->
-                 <!-- MODAL EDIT -->
+                <!-- MODAL EDIT -->
                 <form>
                     <div class="modal fade" id="Modal_Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edit Data Penyakit</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                <div class="form-group row">
-                                    <label class="col-md-2 col-form-label">ID</label>
-                                    <div class="col-md-10">
-                                    <input type="text" name="edit_id" id="edit_id" class="form-control" placeholder="Ganti ID-nya">
-                                    </div>
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Edit Data Penyakit</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2 col-form-label">Nama</label>
-                                    <div class="col-md-10">
-                                    <input type="text" name="edit_nama" id="edit_nama" class="form-control" placeholder="Ubah Namanya">
+                                <div class="modal-body">
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-form-label">ID</label>
+                                        <div class="col-md-10">
+                                            <input type="text" pattern="\[A-Z]{2}\d{2}\" name="edit_id" id="edit_id" data-mask="XX00" class="form-control" placeholder="Ganti ID-nya">
+                                        </div>
                                     </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-form-label">Nama</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="edit_nama" id="edit_nama" class="form-control" placeholder="Ubah Namanya">
+                                        </div>
+                                    </div>
+
                                 </div>
-                                
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" type="submit" id="btn_update" class="btn btn-primary">Update</button>
-                        </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" type="submit" id="btn_update" class="btn btn-primary">Update</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    </form>
+                </form>
                 <!--END MODAL EDIT-->
-        
+
                 <!--MODAL DELETE-->
                 <form>
                     <div class="modal fade" id="Modal_Hapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <strong>Apakah kamu yakin?</strong>
-                        </div>
-                        <div class="modal-footer">
-                            <input type="hidden" name="id_hapus" id="id_hapus" class="form-control">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-                            <button type="button" type="submit" id="btn_hapus" class="btn btn-primary">Ya</button>
-                        </div>
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Hapus Data</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <strong>Apakah kamu yakin?</strong>
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="hidden" name="id_hapus" id="id_hapus" class="form-control">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                                    <button type="button" type="submit" id="btn_hapus" class="btn btn-primary">Ya</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    </form>
+                </form>
                 <!--END MODAL DELETE-->
                 <!-- ============================================================== -->
                 <!-- Right sidebar -->
                 <!-- ============================================================== -->
                 <!-- .right-sidebar -->
-                
+
                 <!-- ============================================================== -->
                 <!-- End Right sidebar -->
                 <!-- ============================================================== -->
@@ -332,95 +332,105 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="<?php echo base_url().'assets/node_modules/jquery/jquery-3.2.1.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/jquery/jquery-3.2.1.min.js' ?>"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="<?php echo base_url().'assets/node_modules/popper/popper.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/node_modules/bootstrap/dist/js/bootstrap.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/popper/popper.min.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/bootstrap/dist/js/bootstrap.min.js' ?>"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="<?php echo base_url().'assets/dist/js/perfect-scrollbar.jquery.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/dist/js/perfect-scrollbar.jquery.min.js' ?>"></script>
     <!--Wave Effects -->
-    <script src="<?php echo base_url().'assets/dist/js/waves.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/dist/js/waves.js' ?>"></script>
     <!--Menu sidebar -->
-    <script src="<?php echo base_url().'assets/dist/js/sidebarmenu.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/dist/js/sidebarmenu.js' ?>"></script>
     <!--Custom JavaScript -->
-    <script src="<?php echo base_url().'assets/dist/js/custom.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/dist/js/custom.min.js' ?>"></script>
     <!-- Footable -->
-    <script src="<?php echo base_url().'assets/node_modules/footable/js/footable.all.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/footable/js/footable.all.min.js' ?>"></script>
     <!--FooTable init-->
-    <script src="<?php echo base_url().'assets/dist/js/pages/footable-init.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/dist/js/pages/footable-init.js' ?>"></script>
     <!-- Sweet-Alert  -->
-    <script src="<?php echo base_url().'assets/node_modules/sweetalert/sweetalert.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/node_modules/sweetalert/jquery.sweet-alert.custom.js'?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/sweetalert/sweetalert.min.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/node_modules/sweetalert/jquery.sweet-alert.custom.js' ?>"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function() {
             tampil_data();
 
             $('#hamapenyakit').footable();
 
-            function tampil_data(){
+            function tampil_data() {
                 $.ajax({
-                    type    : 'ajax',
-                    url     : '<?php echo site_url('Hamapenyakit/product_data'); ?>',
-                    async   : true,
+                    type: 'ajax',
+                    url: '<?php echo site_url('Hamapenyakit/product_data'); ?>',
+                    async: true,
                     dataType: 'json',
-                    success : function(data){
+                    success: function(data) {
                         var html = '';
                         var i;
-                        for(i=0; i<data.length; i++){
-                            html += '<tr>'+
-                                    '<td>'+data[i].id_hamapenyakit+'</td>'+
-                                    '<td>'+data[i].nama_hamapenyakit+'</td>'+
-                                    '<td><img src=<?php echo base_url('assets/gambar/'); ?>'+data[i].foto+' height="100"></td>'+
-                                    '<td style="text-align:right;">'+
-                                        '<a href="javascript:void(0);" data-toggle="modal" data-target="#Modal_Edit" class="btn btn-info btn-sm item_edit" data-product_code="'+data[i].id+'" data-product_name="'+data[i].nama+'" data-price="'+data[i].foto+'">Edit</a>'+' '+
-                                        '<a href="javascript:void(0);" class="btn btn-danger btn-sm item_delete" data-toggle="modal" data-target="#Modal_Hapus" data-product_code="'+data[i].id+'">Hapus</a>'+
-                                    '</td>'+
-                                    '</tr>';
+                        for (i = 0; i < data.length; i++) {
+                            html += '<tr>' +
+                                '<td>' + data[i].id_hamapenyakit + '</td>' +
+                                '<td>' + data[i].nama_hamapenyakit + '</td>' +
+                                '<td><img src=<?php echo base_url('assets/gambar/'); ?>' + data[i].foto + ' height="100"></td>' +
+                                '<td style="text-align:right;">' +
+                                '<a href="javascript:void(0);" data-toggle="modal" data-target="#Modal_Edit" class="btn btn-info btn-sm item_edit" data-product_code="' + data[i].id + '" data-product_name="' + data[i].nama + '" data-price="' + data[i].foto + '">Edit</a>' + ' ' +
+                                '<a href="javascript:void(0);" class="btn btn-danger btn-sm item_delete" data-toggle="modal" data-target="#Modal_Hapus" data-product_code="' + data[i].id + '">Hapus</a>' +
+                                '</td>' +
+                                '</tr>';
                         }
                         $('#tampil_data').html(html);
                     },
-                    error   : function(jqXHR, textStatus, errorThrown){
+                    error: function(jqXHR, textStatus, errorThrown) {
                         alert('Gagal ambil data');
                     }
                 });
             }
 
-            $('#btn_simpan').on('click',function(){
+            $('#btn_simpan').on('click', function() {
+                let nilaiFoto = $('#tambah_foto_hamapenyakit').val();
+                if (nilaiFoto == '') {
+                    swal("Peringatan!", "Harap tambahkan foto!", "warning");
+                }
+
+                let p = document.getElementById('pesan-error-tmbh');
+
                 let data = new FormData(document.getElementById("form_tambah"));
-                data.append('id_hamapenyakit',$('#tambah_id_hamapenyakit').val());
-                data.append('nama_hamapenyakit',$('#tambah_nama_hamapenyakit').val());
-                data.append('foto',$('#tambah_foto_hamapenyakit').get(0).files[0]);
+                data.append('id_hamapenyakit', $('#tambah_id_hamapenyakit').val());
+                data.append('nama_hamapenyakit', $('#tambah_nama_hamapenyakit').val());
+                data.append('foto', $('#tambah_foto_hamapenyakit').get(0).files[0]);
                 $.ajax({
-                    type    :"POST",
-                    url     :"<?php echo base_url('Hamapenyakit/save');?>",
+                    type: "POST",
+                    url: "<?php echo base_url('Hamapenyakit/save'); ?>",
                     //dataType:"json",
-                    contentType : false,
-                    processData : false,
-                    dataType    : 'JSON',
-                    data    :data,
-                    success : function(result){
-                      if (result.status !== true) {
-                        let p = document.getElementById('pesan-error-tmbh');
-                        
-                        $('#pesan-error-tmbh').html(result.pesan);
-                        p.removeAttribute('hidden');
-                        
-                        //alert(result.status);
-                      } else {
-                        $('[name="tambah_id_hamapenyakit"]').val("");
-                        $('[name="tambah_nama_hamapenyakit"]').val("");
-                        $('[name="tambah_foto_hamapenyakit"]').val("");
-                        $('#Modal_Tambah').modal('hide');
-                        tampil_data();
-                        alert(result.status);
-                      }
-                        
+                    contentType: false,
+                    processData: false,
+                    dataType: 'JSON',
+                    data: data,
+                    success: function(result) {
+                        switch (result.status) {
+                            case true:
+                                $('[name="tambah_id_hamapenyakit"]').val("");
+                                $('[name="tambah_nama_hamapenyakit"]').val("");
+                                $('[name="tambah_foto_hamapenyakit"]').val("");
+                                $('#Modal_Tambah').modal('hide');
+                                tampil_data();
+                                swal("Berhasil", result.pesan, "success");
+                                p.setAttribute('hidden',true);
+                                break;
+                            case false:
+                                
+                                $('#pesan-error-tmbh').html(result.pesan);
+                                p.removeAttribute('hidden');
+                                break;
+                            case "warning":
+                                swal("Peringatan", result.pesan, "warning")
+                                break;
+                        }
                     },
-                    error   : function(jqXHR, textStatus, errorThrown){
+                    error: function(jqXHR, textStatus, errorThrown) {
                         alert('Gagal menyimpan data');
                     }
                 });
-                
+
             });
         });
     </script>
