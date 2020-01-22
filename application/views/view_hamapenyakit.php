@@ -228,6 +228,7 @@
                                         <label class="col-md-2 col-form-label">Foto</label>
                                         <div class="col-md-10">
                                             <input type="file" name="tambah_foto_hamapenyakit" id="tambah_foto_hamapenyakit" class="form-control">
+                                            <img src="#" id="preview_tambah_foto" width="400" alt="Preview Gambar">
                                         </div>
                                     </div>
                                 </div>
@@ -255,7 +256,7 @@
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label">ID</label>
                                         <div class="col-md-10">
-                                            <input type="text" pattern="\[A-Z]{2}\d{2}\" name="edit_id" id="edit_id" data-mask="XX00" class="form-control" placeholder="Ganti ID-nya">
+                                            <input type="text"s name="edit_id" id="edit_id" class="form-control" placeholder="Ganti ID-nya">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -356,6 +357,22 @@
             tampil_data();
 
             $('#hamapenyakit').footable();
+
+            $('#tambah_foto_hamapenyakit').change(function() {
+                preview(this);
+            })
+
+            function preview(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e){
+                        $('#preview_tambah_foto').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
 
             function tampil_data() {
                 $.ajax({
